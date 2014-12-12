@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RWD checklist</title>
+    <link href="css/thankyouEricMeyer.css" type="text/css" rel="stylesheet">
+    <link href="css/stylish.css" type="text/css" rel="stylesheet">
+
+    <!-- // <script src="http://www.samkapila.com/parts/js/modernizr.sk.js"></script> -->
+<script type="text/javascript" src="//use.typekit.net/ykr4hqj.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>A Handy Checklist for <br><img src="http://www.samkapila.com/rwd/rwd.png" alt="Responsive Web Design"> </h1>
+    </header>
+
+    <div class="altlist" id="htmlsetup">
+        <h2><span class="numberbig">1.</span><br>HTML Setup</h2>
+        <ul>
+            <li>
+
+                <div class="steps">
+                    <p>Link HTML pages to CSS stylesheets. This goes in the head of the document. <code>&lt;link href="style.css" type="text/css" rel="stylesheet"&gt;</code></p>
+                </div>
+            </li>
+            <li>
+
+                <div class="steps">
+                    <p>Meta tags for viewport that allows certain devices read media queries. Read <a href="http://a11yproject.com/posts/never-use-maximum-scale/">this post</a> about viewport codes. <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></p>
+                </div>
+            </li>
+            <li>
+                <div class="steps">
+                    <p>Set up some sort of container element. This will make the math easy later on.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="reglist" id="flexiblelayout">
+     <h2><span class="numberbig">2.</span><br>Flexible Layout</h2>
+     <ul>
+        <li>
+            <div class="steps">
+                 <p>It's a good idea to keep anything "left", "right", or width related in percents (except max-widths). Use pixels or ems for anything "top", "bottom", or height-related. All width is in percentages, except max-widths (in some cases).</p>
+            </div>
+        </li>
+        <li>
+            <div class="steps">
+                 <p>If you stick with the "<a href="http://www.html5rocks.com/en/mobile/responsivedesign/" target="_blank">mobile first approach</a>", all media queries start from smallest to largest (the mobile-first approach), starting with a @media and closing with a } that doesn't belong to another element. You also begin with a global CSS that does not need to be in a media query.</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="steps">
+                <p>Check out <a href="http://neat.bourbon.io/">Bourbon</a>'s responsive friendly grid called Bourbon Neat.</p>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+<div class="altlist" id="flexibletype">
+     <h2><span class="numberbig">3.</span><br>Flexible Type</h2>
+    <ul>
+        <li>
+            <div class="steps">
+            <p> List two or more fall-back typefaces.<code>font-face: "Adobe Caslon Pro", Georgia, serif; </code></p>
+            </div>
+        </li>
+        <li>
+            <div class="steps"><p>All typography is in ems. The website, <a href="http://www.pxtoem.com">PXtoEM</a>, is helpful for conversions. For calculator-free conversions, add the following to body:
+            <code>
+            body {
+            font-size: 62.5%;
+            }
+            </code></p></div>
+        </li>
+    </ul>
+</div>
+
+<div class="reglist" id="flexibleimages">
+     <h2><span class="numberbig">4.</span><br>Flexible Images (& Videos)</h2>
+    <ul>
+        <li>
+            <div class="steps">
+               <p>Allow images to resize by adding the following to the global CSS:
+                <code>img {max-width:100;}</code></p>
+            </div>
+        </li>
+        <li>
+            <div class="steps"><p><a href="http://sixrevisions.com/web_design/comprehensive-guide-saving-images-for-web/">Save images for web</a> (72dpi or retina, RGB, etc).</p></div>
+        </li>
+        <li>
+            <div class="steps">
+                <p>For videos, use <a href="http://fitvidsjs.com/" target="_blank">FitVids.js</a></p>
+                <iframe src="http://player.vimeo.com/video/28523422" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ <script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(".steps").fitVids();
+  });
+</script>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="altlist" id="codepens">
+<h2><span class="numberbig">5.</span><br>CodePens</h2>
+<ul>
+<li class="pens"><a href="http://codepen.io/samkap/pen/gBuHk" target="blank">Differences between ems and rems</a></li>
+<li class="pens"><a href=" http://codepen.io/samkap/pen/LIhzj" target="blank">Two- to three-column layout example with nth-of-type pseudo classes</a></li>
+<li class="pens"><a href=" http://codepen.io/samkap/pen/uHkip" target="blank">flexible wrapper including one media query containing one flexible- and one fixed-width div</a></li>
+<li class="pens"><a href="http://codepen.io/samkap/pen/uexgA" target="blank">Experimenting with flexible images and fluid backgrounds</a></li>
+<li class="pens"><a href="http://codepen.io/samkap/pen/oHcAv" target="blank">Simple font-size change with media queries</a></li>
+<li class="pens"><a href="http://codepen.io/samkap/pen/riahm" target="blank">Stopping select images from scaling in responsive containers</a></li>
+<li class="pens"><a href="http://codepen.io/samkap/pen/Lcnuf" target="blank">Simple container</a></li>
+<li class="pens">MOAR SOON!<a href="" target="blank"></a></li>
+</ul>
+</div>
+<div class="reglist" id="resources">
+<h2><span class="numberbig">6.</span><br>Supportive texts and resources</h2>
+<ul class="readmore">
+<li>“<a href="http://www.abookapart.com" target="blank">Responsive Web Design</a>” by Ethan Marcotte, $9 ebook, $16 paperback and ALA <a href="http://www.alistapart.com/article/responsive-web-design/" target="blank">article</a></li>
+<li>“<a href="http://bradfrost.github.io/this-is-responsive/" target="blank">This is Responsive</a>” by Brad Frost, free. [BEST RESOURCE EVER]</li>
+<li>“<a href="http://www.htmlandcssbook.com/" target="blank">HTML &amp; CSS</a>” by John Duckett</li>
+<li>“<a href="" target="blank">Elements of user Experience</a>” by Jesse James Garrett], book.</li>
+<li>“<a href="http://www.fivesimplesteps.co.uk" target="blank">Designing for the Web</a>” by Mark Boulton, book.</li>
+<li>“<a href="" target="blank">Ordering Disorder</a>” by Khoi Vinh, book.</li>
+<li><a href="http://www.codepen.io" target="blank">Codepen</a></li>
+<li><a href="http://www.css-tricks.com" target="blank">CSS-Tricks</a></li>
+<li><a href="http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32" target="blank">Sass with RWD</a></li>
+<li><a href="http://pxtoem.com/" target="blank">PXtoEM</a></li>
+<li><a href="http://www.typekit.com/" target="blank">Adobe's font-hosting service</a></li>
+<li><a href="http://www.google.com/fonts" target="blank">Google's free font-hosting service</a></li>
+<li><a href="http://scottjehl.github.io/picturefill/" target="_blank">PictureFill</a> IMG-switching which is evident in <a href="http://alistapart.com/article/responsive-web-design/">the first article about responsive web design</a>. </li>
+
+</ul>
+
+
+</div>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56718701-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
+
+
+
+

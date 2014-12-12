@@ -1,0 +1,164 @@
+body {
+       background: #3F535A;
+       font-family: "Adelle-sans", sans-serif;
+       color: white;
+       font-size: 100%;
+       line-height: 1.6;
+}
+
+
+/* STRUCTURE -------------------------------------------------------*/
+
+header, .altlist, .reglist {
+       padding: 6em 5%;
+}
+.altlist {
+       background: #253940;
+}
+
+.csslist {}
+.otherlist {}
+
+/*FORMS -------------------------------------------------------*/
+
+/* SQUARED FOUR via http://cssdeck.com/labs/css-checkbox-styles */
+.squaredFour {
+       width: 20px;
+       float: left;
+       position: relative;
+}
+
+.squaredFour label {
+       cursor: pointer;
+       position: absolute;
+       width: 20px;
+       height: 20px;
+       top: 0;
+       border-radius: 4px;
+
+       -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+       -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+       box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+       background: #fcfff4;
+
+       background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+       background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+       background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+       background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+       background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.squaredFour label:after {
+       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+       content: '';
+       position: absolute;
+       width: 9px;
+       height: 5px;
+       background: transparent;
+       top: 4px;
+       left: 4px;
+       border: 3px solid #333;
+       border-top: none;
+       border-right: none;
+
+       -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+       -ms-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+}
+
+.squaredFour label:hover::after {
+       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+       filter: alpha(opacity=30);
+       opacity: 0.5;
+}
+
+.squaredFour input[type=checkbox]:checked + label:after {
+       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+       filter: alpha(opacity=100);
+       opacity: 1;
+}
+
+
+
+
+
+/* TYPE ------------------------------------------------------- */
+ul, .readmore {
+
+       max-width: 600px;
+       margin: 0 auto;
+}
+
+li {
+       margin-bottom:4rem;
+}
+
+#resources li, #codepens li {
+       margin-bottom: 2em;
+}
+h1,h2 {
+       color: #E0531B;
+       font-weight: 300;
+       letter-spacing: .05em;
+       text-align: center;
+       font-family: "Adelle";
+       text-shadow: 0px 1px 2px  rgba(1,1,1,.5);
+
+}
+
+h1 {
+       font-size: 3.75em;
+}
+
+h1 img {
+       margin-top: 1em;
+       text-align: center;
+          max-width: 100%;
+}
+
+h2 {
+       font-size: 2.8rem;
+       text-shadow: 0px 1px 2px  rgba(1,1,1,.5);
+       padding: 1em 0;
+}
+
+p, li {
+       font-size: 19px;
+       font-size: 1.2rem;
+       line-height: 1.8;
+       font-weight: 400;
+}
+
+code {
+       display: block;
+       background: #BED2D9;
+       color: #3F535A;
+       width: 90%;
+       padding: 1em 5%;
+       margin-top: .75em;
+       text-indent: 0;
+}
+a:link, a:visited {
+       color: white;
+       text-decoration: none;
+       padding-bottom: 1px;
+       border-bottom: 1px dotted white;
+}
+
+
+a:hover {
+       color:#E0531B;
+       border-bottom: 1px dotted #E0531B;
+}
+
+.numberbig {
+       font-style: italic;
+       font-size: 1.5rem;
+       text-shadow: 0px 1px 2px  rgba(1,1,1,0);
+       color: white;
+}

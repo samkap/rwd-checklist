@@ -1,0 +1,27 @@
+body  {
+	background: #dde;
+	font-size: 62.5%;
+	line-height: 1.4;
+}
+
+.container {
+	width: 75%;
+	max-width: 900px;
+}
+
+@media screen and (min-width: 500px) {
+
+		body {
+			background: #5a5a5a;
+		}
+
+		.container {
+			background: #aaa;
+		}
+} /*500 media*/
+
+@media screen and (min-width: 700px) {
+
+} /*700 media*/
+
+
