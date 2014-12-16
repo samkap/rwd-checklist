@@ -12,6 +12,7 @@ body {
 header, .altlist, .reglist {
        padding: 6em 5%;
 }
+
 .altlist {
        background: #253940;
 }
@@ -96,6 +97,7 @@ ul, .readmore {
 
 li {
        margin-bottom:4rem;
+       margin-left: 1%;
 }
 
 #resources li, #codepens li {
